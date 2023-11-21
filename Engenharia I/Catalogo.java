@@ -26,7 +26,7 @@ public class Catalogo {
     public List<Filme> buscarPorTitulo(String pesquisa){
         List<Filme> filmesEncontrados = new LinkedList<Filme>();
         for (Filme filme:filmes){
-            if (filme.getTitulo().contains(pesquisa.toLowerCase())){
+            if (filme.getTitulo().toLowerCase().contains(pesquisa.toLowerCase())){
                 filmesEncontrados.add(filme);
             }
         }
@@ -36,7 +36,7 @@ public class Catalogo {
     public List<Filme> buscarPorGenero(String pesquisa) {
         List<Filme> filmesEncontrados = new LinkedList<Filme>();
         for (Filme filme:filmes){
-            if (filme.getEspec().getGeneros().contains(pesquisa.toLowerCase())){
+            if (filme.getEspec().getGeneros().contains(pesquisa)){
                 filmesEncontrados.add(filme);
             }
         }
