@@ -1,1 +1,2 @@
-
+# Informações
+Pasta dedicada à primeira atividade de disciplina de interação Humano Computador. Nesta atividade, foi pedido a citação de exemplos positivos e negativos sobre cada heurística de usabilidade listadas neste "[link](https://www.nngroup.com/articles/ten-usability-heuristics/)
