@@ -5,4 +5,4 @@ Para atingir esse objetivo, é utlizada uma interface.
 - As classes filhas são chamadas de Estratégias(Strategies).
 
 ## Diagrama UML
-![uml](../media/Strategy UML.png)
+![](https://github.com/ryan-wakugawa/Bertoti/blob/main/Engenharia%20de%20Software%20III/media/Strategy%20UML.png)
