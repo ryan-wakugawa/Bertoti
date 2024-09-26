@@ -4,15 +4,15 @@ public class Passagem {
     private Nivel nivel;
     private double distancia;
 
-    public void setNivel(Nivel nivel){
+    public void setNivel(Nivel nivel) {
         this.nivel = nivel;
     }
 
-    private void setDistancia(double distancia){
+    private void setDistancia(double distancia) {
         this.distancia = distancia;
     }
 
-    public double calcularPassagem(){
+    public double calcularPassagem() {
         return nivel.calcular(distancia, nivel.getMultiplicador());
     }
 }

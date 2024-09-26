@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Loja {
+    public final List<Client> clients = new ArrayList<>();
     private final List<EventListener> eventListeners = new ArrayList<>();
     private final List<String> products = new ArrayList<>();
-    public final List<Client> clients = new ArrayList<>();
 
     public void addListener(EventListener eventListener) {
         eventListeners.add(eventListener);
