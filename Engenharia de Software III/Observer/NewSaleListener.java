@@ -1,5 +1,3 @@
-package Observer;
-
 import java.util.List;
 
 public class NewSaleListener implements EventListener {

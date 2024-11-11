@@ -4,6 +4,13 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Engenharia de Software III" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Engenharia de Software III/Composite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Engenharia de Software III/Facade" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Engenharia de Software III/Singleton" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Engenharia de Software III/Strategy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Engenharia de Software III/media" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Engenharia de Software III/Observer" />
+      <excludeFolder url="file://$MODULE_DIR$/Engenharia de Software III/ObserverBot" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

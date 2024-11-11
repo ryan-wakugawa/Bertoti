@@ -1,7 +1,12 @@
-# Engenharia de Software III
+# Strategy
 
-Pasta para o curso de Engenharia de Software III do 4º semestre de Análise e Desenvolvimento de Sistemas
+Strategy é um Design Pattern que busca relacionar entidades de uma forma melhor do que a Herança, removendo código
+redundante das classes filhas.
+Para atingir esse objetivo, é utlizada uma interface.
 
-## Design Patterns
+- A classe principal é chamada de Contexto(Context)
+- As classes filhas são chamadas de Estratégias(Strategies).
 
-- [Strategy](https://github.com/ryan-wakugawa/Bertoti/tree/main/Engenharia%20de%20Software%20III/Strategy)
+## Diagrama UML
+
+![uml](https://github.com/ryan-wakugawa/Bertoti/blob/main/Engenharia%20de%20Software%20III/media/Strategy%20UML.png)
