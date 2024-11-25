@@ -5,4 +5,32 @@ futebol, quando determinado evento ocorre (um jogador marcou um gol, por exemplo
 
 ## Diagrama UML
 
-![uml](https://github.com/ryan-wakugawa/Bertoti/blob/main/Engenharia%20de%20Software%20III/media/Observer%20UML.png)
+```mermaid
+classDiagram
+    class EventListener {
+        <<interface>>
+        + void sendMail(String data, String type, List<Client> clients)
+    }
+
+    class Loja {
+        + List<Client> clients
+        - List<EventListener> eventListeners
+        - List<String> products
+        + void addListener(EventListener eventListener)
+        + void addProduct(String product)
+        + void startSale()
+        - void notifyClients(String data, String type)
+    }
+
+    class NewProductListener {
+        + void sendMail(String data, String type, List<Client> clients)
+    }
+
+    class NewSaleListener {
+        + void sendMail(String data, String type, List<Client> clients)
+    }
+
+    Loja o-- EventListener
+    EventListener <|.. NewProductListener
+    EventListener <|.. NewSaleListener
+```
