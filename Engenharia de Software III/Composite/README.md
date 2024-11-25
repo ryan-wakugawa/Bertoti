@@ -28,7 +28,7 @@ classDiagram
         +calcularGastos() double
     }
 
-    EmpresaComponent <|-- Empresa
-    EmpresaComponent <|-- EmpresaMae
-    EmpresaMae *--> EmpresaComponent
+    EmpresaComponent <|.. Empresa
+    EmpresaComponent <|.. EmpresaMae
+    EmpresaMae o--> EmpresaComponent
 ```
