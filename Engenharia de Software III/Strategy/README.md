@@ -9,4 +9,42 @@ Para atingir esse objetivo, é utlizada uma interface.
 
 ## Diagrama UML
 
-![uml](https://github.com/ryan-wakugawa/Bertoti/blob/main/Engenharia%20de%20Software%20III/media/Strategy%20UML.png)
+```mermaid
+classDiagram
+    class Nivel {
+        <<interface>>
+        + double calcular(double multiplicador, double distancia)
+        + double getMultiplicador()
+    }
+
+    class Economica {
+        + double multiplicador = 0.8
+        + double calcular(double multiplicador, double distancia)
+        + double getMultiplicador()
+    }
+
+    class Executiva {
+        + double multiplicador = 1.25
+        + double calcular(double multiplicador, double distancia)
+        + double getMultiplicador()
+    }
+
+    class Padrao {
+        + double multiplicador = 1
+        + double calcular(double multiplicador, double distancia)
+        + double getMultiplicador()
+    }
+
+    class Passagem {
+        - Nivel nivel
+        - double distancia
+        + void setNivel(Nivel nivel)
+        + void setDistancia(double distancia)
+        + double calcularPassagem()
+    }
+
+    Nivel <|.. Economica
+    Nivel <|.. Executiva
+    Nivel <|.. Padrao
+    Passagem o-- Nivel
+```
