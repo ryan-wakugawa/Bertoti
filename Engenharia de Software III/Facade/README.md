@@ -35,14 +35,14 @@ classDiagram
         + String type = "png"
     }
 
-    Facade --> ImageFile
-    Facade --> ExtensionFactory
-    Facade --> BitrateReader
-    ExtensionFactory --> Extension
+    Facade ..> ImageFile
+    Facade ..> ExtensionFactory
+    Facade ..> BitrateReader
+    ExtensionFactory ..> Extension
     JPEGExtension ..|> Extension
     PNGExtension ..|> Extension
-    BitrateReader --> Extension
-    BitrateReader --> ImageFile
-    ImageFile --> Extension
+    BitrateReader ..> Extension
+    BitrateReader ..> ImageFile
+    ImageFile ..> Extension
 
 ```
